@@ -12,5 +12,11 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.4.0",
     "qunit": "~1.20.0"
+  },
+  "devDependencies": {
+    "sass-toolkit": "~2.9.0",
+    "modular-scale": "~2.1.1",
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "singularity": "~1.6.2"
   }
 }
