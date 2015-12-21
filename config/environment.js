@@ -2,8 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ideabox',
+    modulePrefix: 'ideastash',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://ideastash.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
