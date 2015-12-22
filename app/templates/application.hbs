@@ -1,5 +1,25 @@
-<h2 id="title">SKYDEA!</h2>
+<header class="nav">
+  <div class="container">
+    <div class="nav-title">
+      <h3>{{#link-to 'application'}}SKYDEA{{/link-to}}</h3>
+    </div>
+    <nav>
+      <ul class="nav-main">
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <main>
-  {{outlet}}
+  <div class="container">
+    {{outlet}}
+  </div>
 </main>
+
+<footer>
+  <div class="container">
+
+  </div>
+</footer>

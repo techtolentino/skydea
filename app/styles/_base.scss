@@ -1,4 +1,30 @@
+$body-background: $glacier;
+$base-text-color: $overcast;
+
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $base-text-color;
+  box-sizing: border-box;
+  background: $body-background;
 }
+
+a {
+  text-decoration: none;
+  color: $base-text-color;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
