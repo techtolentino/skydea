@@ -2,10 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ideastash',
+    modulePrefix: 'skydea',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://ideastash.firebaseio.com/',
+    firebase: 'https://skydea.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
