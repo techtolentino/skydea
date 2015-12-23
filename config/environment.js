@@ -4,7 +4,11 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'skydea',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: { 
+      'font-src': "'self' data: fonts.gstatic.com",
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com"
+      },
     firebase: 'https://skydea.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
