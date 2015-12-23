@@ -7,13 +7,14 @@
     value=name
     class="project-name-input"
   }}
-  {{input
+  {{textarea
     type="text"
     placeholder="Project Description"
     value=description
     class="project-description-input"
   }}
-  <button {{ action 'addProject' }} class="submit">
-    Submit
-  </button>
+  
+  {{#link-to 'projects'}}
+    <div class="splash-button" {{ action 'addProject' }}>Add Project</div>
+  {{/link-to}}
 </div>
