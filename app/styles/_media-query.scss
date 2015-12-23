@@ -1,0 +1,33 @@
+@media all and (max-width: 530px) {
+  
+  .splash {
+    margin-top: 1em;
+
+    &-title {
+      font-size: 4em;
+    }
+
+    &-button {
+      margin: .5em;
+      font-size: .875em;
+      padding: .5em .5em;
+      width: 90px;
+
+      &--PRIMARY {
+        margin: .5em;
+        font-size: .875em;
+        padding: .5em .5em;
+        width: 90px;
+      }
+    }
+    img {
+      width: 250px;
+    }
+  }
+
+
+
+
+
+  
+}
