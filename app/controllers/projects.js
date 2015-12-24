@@ -4,7 +4,9 @@ export default Ember.Controller.extend({
   actions:{
     deleteProject: function(id){
       this.store.findRecord('project', id).then(function(project){
-        project.destroyRecord();
+        project.deleteRecord();
+
+        project.save();
       });
     }
   }
