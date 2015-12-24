@@ -2,10 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  description: DS.attr('string'),
-  created: DS.attr('string', {
-    defaultValue: function() {
-      return new Date();
-    }
-  })
+  description: DS.attr('string')
 });
