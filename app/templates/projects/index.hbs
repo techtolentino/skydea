@@ -1,1 +1,15 @@
 <h2>Here are your projects!</h2>
+
+{{#each project in model}}
+  <div class="container">
+    <div class="project-item">
+      <h3>
+        {{#link-to 'projects.edit' project.id}}
+          {{project.name}}
+        {{/link-to}}
+      </h3>
+      <p>{{project.description}}</p>
+      <button {{action 'deleteProject' project.id}}>Delete</button>
+    </div>
+  </div>
+{{/each}}
