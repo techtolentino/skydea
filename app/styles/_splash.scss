@@ -33,11 +33,21 @@
       color: $white;
     }
 
+    &--LEFT {
+      @extend %splash-button;
+      color: $base-text-color;
+      margin-left: 0;
+    }    
+
     &--DELETE {
       background: $base-dark-color;
       color: $white;
       border: 1px solid $base-dark-color;
       border-radius: 2px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
