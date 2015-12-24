@@ -1,20 +1,29 @@
 <h2>Need to edit this project?</h2>
 
 <div class="project-form">
-  {{input
-    type="text"
-    placeholder="Project Name"
-    value=model.name
-    class="project-name-input"
-  }}
-  {{textarea
-    type="text"
-    placeholder="Project Description"
-    value=model.description
-    class="project-description-input"
-  }}
-  
-  {{#link-to 'projects'}}
-    <div class="splash-button" {{ action 'editProject' model.id }}>Save Changes</div>
-  {{/link-to}}
+  <div class="project-form--INPUTS">
+    <label for="name" class="project-label">Please edit the project name</label>
+      {{input
+        type="text"
+        placeholder="Project Name"
+        value=model.name
+        class="project-name-input"
+      }}
+
+    <label for="name" class="project-label">Please edit the description</label>      
+      {{textarea
+        type="text"
+        placeholder="Project Description"
+        value=model.description
+        class="project-description-input"
+      }}
+    </div>
+
+    {{#link-to 'projects'}}
+      <div class="splash-button--PRIMARY" {{ action 'editProject' model.id }}>Update</div>
+    {{/link-to}}
+
+    {{#link-to 'projects'}}
+      <div class="splash-button">Cancel</div>
+    {{/link-to}}
 </div>

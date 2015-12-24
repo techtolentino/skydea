@@ -1,11 +1,16 @@
 %splash-button {
   display: inline-block;
-  border: 1px solid white;
+  border: 1px solid $base-text-color;
   width: 100px;
   padding: .5em 1em;
   margin: 1em;
   border-radius: 2px;
   text-align: center;
+  &:hover {
+    background-color: $base-dark-color;
+    border: 1px solid $base-dark-color;
+    color: $white;
+  }
 }
 
 .splash {
@@ -24,8 +29,15 @@
 
     &--PRIMARY {
       @extend %splash-button;
-      background-color: $white;
-      color: $glacier;
+      background-color: $base-text-color;
+      color: $white;
+    }
+
+    &--DELETE {
+      background: $base-dark-color;
+      color: $white;
+      border: 1px solid $base-dark-color;
+      border-radius: 2px;
     }
   }
 

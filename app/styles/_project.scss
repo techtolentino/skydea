@@ -3,5 +3,37 @@
     text-align: left;
     padding: 2em 0;
     border-bottom: 1px dotted $ice;
+    margin-bottom: 2em;
+  }
+
+  &-title {
+    a {
+      color: $base-dark-color;
+
+      &:hover {
+        color: $warm-gray;
+      }
+    }
+  }
+
+  &-arrow {
+    font-size: 0.65em;
+  }
+
+  &-form {
+    &--INPUTS {
+      text-align: left;
+      padding: 1em;
+      display: block;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+
+  &-label {
+    text-align: left;
+    color: $base-dark-color;
+    font-size: 0.875em;
+    margin: 0;
   }
 }

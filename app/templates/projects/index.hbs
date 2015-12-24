@@ -1,15 +1,20 @@
 <h2>Here are your projects!</h2>
 
-{{#each project in model}}
-  <div class="container">
+
+<div class="container">
+  {{#each project in model}}
     <div class="project-item">
-      <h3>
+      <h3 class="project-title">
         {{#link-to 'projects.edit' project.id}}
-          {{project.name}}
+          {{project.name}} <span class="project-arrow">&nbsp; &#9654;</span>
         {{/link-to}}
       </h3>
       <p>{{project.description}}</p>
-      <button {{action 'deleteProject' project.id}}>Delete</button>
+      <button {{action 'deleteProject' project.id}} class="splash-button--DELETE">Delete</button>
     </div>
-  </div>
-{{/each}}
+  {{/each}}
+
+  {{#link-to 'projects.new'}}
+    <div class="splash-button">Add Project</div>
+  {{/link-to}}
+</div>

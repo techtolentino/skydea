@@ -1,20 +1,29 @@
 <h2>Add a new project!</h2>
 
 <div class="project-form">
-  {{input
-    type="text"
-    placeholder="Project Name"
-    value=name
-    class="project-name-input"
-  }}
-  {{textarea
-    type="text"
-    placeholder="Project Description"
-    value=description
-    class="project-description-input"
-  }}
+  <div class="project-form--INPUTS">
+    <label for="name" class="project-label">Please enter a project name</label>
+    {{input
+      type="text"
+      placeholder="Project Name"
+      value=name
+      class="project-name-input"
+    }}
+
+    <label for="name" class="project-label">Please enter description</label>
+    {{textarea
+      type="text"
+      placeholder="Project Description"
+      value=description
+      class="project-description-input"
+    }}
+  </div>
   
   {{#link-to 'projects'}}
-    <div class="splash-button" {{ action 'addProject' }}>Add Project</div>
+    <div class="splash-button--PRIMARY" {{ action 'addProject' }}>Add Project</div>
+  {{/link-to}}
+
+  {{#link-to 'projects'}}
+    <div class="splash-button">Cancel</div>
   {{/link-to}}
 </div>
