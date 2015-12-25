@@ -43,3 +43,10 @@ input, textarea {
   font-size: .875em;
   border: 1px solid $warm-gray;
 }
+
+.base {
+  &-subtitle {
+    font-size: 1.75em;
+    color: $night;
+  }
+}

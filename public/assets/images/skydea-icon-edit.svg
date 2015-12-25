@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="104px" height="105px" viewBox="0 0 104 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>skydea-crud-icons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Shape-+-editor-pencil-pen-edit-write-outline-stroke" sketch:type="MSLayerGroup" fill="#39B6E5">
+            <path d="M52,0.5 C23.3,0.5 0,23.8 0,52.5 C0,81.2 23.3,104.5 52,104.5 C80.7,104.5 104,81.2 104,52.5 C104,23.8 80.7,0.5 52,0.5 L52,0.5 Z M52,100.5 C25.5,100.5 4,79 4,52.5 C4,26 25.5,4.5 52,4.5 C78.5,4.5 100,26 100,52.5 C100,79 78.5,100.5 52,100.5 L52,100.5 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M41.9669839,16.6605372 C41.9669839,13.7859037 44.8416173,13.7859037 44.8416173,13.7859037 L59.1631775,13.7859037 C59.1631775,13.7859037 62.037811,13.7859037 62.037811,16.6605372 L62.0361649,76.8755421 L52.0039718,91.2140963 L41.962189,76.8755421 L41.9669839,16.6605372 L41.9669839,16.6605372 Z M44.8416173,28.1244579 L59.1801715,28.1244579 L59.1801715,74.0078313 L44.8416173,74.0078313 L44.8416173,28.1244579 L44.8416173,28.1244579 Z M45.4607131,76.8755421 L52.0039718,86.2242651 L58.5376408,76.8755421 L45.4607131,76.8755421 L45.4607131,76.8755421 Z M44.8416173,16.6605372 L59.1801715,16.6605372 L59.1801715,25.2567471 L44.8416173,25.2567471 L44.8416173,16.6605372 L44.8416173,16.6605372 Z" id="editor-pencil-pen-edit-write-outline-stroke" stroke="#FFFFFF" stroke-width="0.5" sketch:type="MSShapeGroup" transform="translate(52.000000, 52.500000) rotate(45.000000) translate(-52.000000, -52.500000) "></path>
+        </g>
+    </g>
+</svg>
