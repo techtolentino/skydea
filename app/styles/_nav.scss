@@ -1,6 +1,7 @@
 .nav {
   width: 100%;
   overflow: auto;
+  border-bottom: 1px dotted $base-text-color;
 
   &-title {
     float: left;
