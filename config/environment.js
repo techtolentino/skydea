@@ -10,6 +10,9 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com"
       },
     firebase: 'https://skydea.firebaseio.com/',
+    'simple-auth': {
+      serverTokenRevocationPoint: '/revoke'
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

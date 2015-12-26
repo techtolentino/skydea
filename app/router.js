@@ -11,6 +11,9 @@ Router.map(function() {
     this.route("new");
     this.route('edit', {path: '/edit/:project_id'});
   });
+  this.route('users');
+  this.route('signup');
+  this.route('signin');
 });
 
 export default Router;
