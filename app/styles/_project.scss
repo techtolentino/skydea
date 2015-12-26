@@ -2,13 +2,18 @@
   &-item {
     text-align: left;
     padding: 2em 0;
-    border-bottom: 1px dotted $ice;
-    margin-bottom: 2em;
+    border-bottom: 1px dotted $night;
+    p {
+      max-width: 80%;
+      font-weight: 300;
+      color: $base-dark-color;
+    }
   }
 
   &-title {
+    font-family: 'Oxygen', sans-serif;
     a {
-      color: $base-dark-color;
+      color: $base-text-color;
 
       &:hover {
         color: $warm-gray;

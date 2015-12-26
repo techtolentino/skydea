@@ -1,0 +1,71 @@
+%default-button {
+  display: inline-block;
+  border: 1px solid $base-text-color;
+  width: 100px;
+  padding: .5em .25em;
+  font-size: 0.875em;
+  margin: 1em 1em 1em 0;
+  border-radius: 2px;
+  text-align: center;
+
+  &:hover {
+    background-color: $base-dark-color;
+    border: 1px solid $base-dark-color;
+    color: $white;
+  }
+}
+
+.button {
+  @extend %default-button;
+  
+  &-icon {
+    img {
+      width: 10px;
+    }
+  }
+  &--PRIMARY {
+    @extend %default-button;
+    background-color: $base-text-color;
+    color: $white;
+  }
+
+  &--LEFT {
+    @extend %default-button;
+    color: $base-text-color;
+    margin-left: 0;
+  }    
+
+  &--DELETE {
+    background: $white;
+    margin-right: .5em;
+    color: $red;
+    border: 1px solid $red;
+    border-radius: 2px;
+    width: 50px;
+    &:hover {
+      cursor: pointer;
+      background: $red;
+      color: $white;
+    }
+  }
+
+  &--EDIT {
+    background: $white;
+    margin-right: .5em;
+    border: 1px solid $green;
+    border-radius: 2px;
+    width: 50px;    
+    color: $green;
+    a {
+      &:hover {
+        color: $white;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      background: $green;
+      color: $white;
+    }
+  }  
+
+}

@@ -20,10 +20,12 @@
   </div>
   
   {{#link-to 'projects'}}
-    <div class="splash-button--PRIMARY" {{ action 'addProject' }}>Add Project</div>
+    <div class="button--PRIMARY" {{ action 'addProject' }}>Add Project</div>
   {{/link-to}}
 
   {{#link-to 'projects'}}
-    <div class="splash-button">Cancel</div>
+    <div class="button">
+      {{!-- <span class="button-icon"><img src="assets/images/skydea-icon-delete.svg"></span> --}}
+      Cancel</div>
   {{/link-to}}
 </div>
