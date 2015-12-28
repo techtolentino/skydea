@@ -17,7 +17,7 @@
 
 .button {
   @extend %default-button;
-  
+
   &-icon {
     img {
       width: 10px;
@@ -31,9 +31,10 @@
 
   &--LEFT {
     @extend %default-button;
-    color: $base-text-color;
+    background-color: $base-text-color;
+    color: $white;
     margin-left: 0;
-  }    
+  }
 
   &--DELETE {
     background: $white;
@@ -54,7 +55,7 @@
     margin-right: .5em;
     border: 1px solid $green;
     border-radius: 2px;
-    width: 50px;    
+    width: 50px;
     color: $green;
     a {
       &:hover {
@@ -66,6 +67,6 @@
       background: $green;
       color: $white;
     }
-  }  
+  }
 
 }
