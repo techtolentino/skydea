@@ -19,7 +19,7 @@ export default Ember.Controller.extend({
         description: ''
       });
 
-      this.transitionTo('projects');
+      this.transitionTo('index');
     }
   }
 });
