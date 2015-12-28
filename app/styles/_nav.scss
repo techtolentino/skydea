@@ -13,25 +13,34 @@
     }
   }
 
+
   &-main {
     list-style-type: none;
     float: right;
     padding: 0;
 
-    li {
-      color: $glacier;
-      display: inline-block;
-      padding: 0 .5em 0 .5em;
-      box-sizing: border-box;
-      margin: .4em .5em 0 .5em;
+  }
 
-      a {
-        color: $ice;
-        font-weight: bold;
-        &:hover {
-          color: $base-dark-color;
-        }
-      }
+  &-button {
+    background: $green;
+    color: $white;
+    padding: 5px 10px;
+    border-radius: 2px;
+  }
+}
+
+nav li {
+  color: $night;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 0 .5em 0 .5em;
+  box-sizing: border-box;
+  margin: .4em .5em 0 .5em;
+  font-size: 0.875em;
+  a {
+    color: $ice;
+    &:hover {
+      color: $base-dark-color;
     }
   }
 }
