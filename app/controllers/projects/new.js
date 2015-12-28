@@ -18,8 +18,6 @@ export default Ember.Controller.extend({
         name: '',
         description: ''
       });
-
-      this.transitionTo('index');
     }
   }
 });
