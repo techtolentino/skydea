@@ -22,10 +22,13 @@
     }}
   </div>
 
-  <button class="button--PRIMARY">Add Project</button>
-
+  {{#if session.isAuthenticated}}
+    <button class="button--PRIMARY">Add Project</button>
+  {{else}}
+    <p class="base-required">Please note: you must be logged in to add a project</p>
+  {{/if}}
   {{#link-to 'projects'}}
     <div class="button">
-      Cancel</div>
+      Go back</div>
   {{/link-to}}
 </form>

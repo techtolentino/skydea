@@ -10,9 +10,12 @@
           <div class="button--PRIMARY">View Projects</div>
         {{/link-to}}
 
-        {{#link-to 'projects.new'}}
-          <div class="button">Add Project</div>
-        {{/link-to}}
+
+        {{#if session.isAuthenticated}}
+          {{#link-to 'projects.new'}}
+            <div class="button">Add Project</div>
+          {{/link-to}}
+        {{/if}}
     </div>
   </div>
 </section>
