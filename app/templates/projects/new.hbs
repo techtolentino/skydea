@@ -1,31 +1,31 @@
 <h2 class="base-subtitle">Add a new project!</h2>
 
-<div class="project-form">
+<form class="project-form" {{action 'addProject' on="submit"}}>
   <div class="project-form--INPUTS">
-    <label for="name" class="project-label">Please enter a project name</label>
+    <label for="name" class="project-label">Please enter a project name *</label>
     {{input
       type="text"
       placeholder="Project Name"
       value=name
       class="project-name-input"
+      required="required"
     }}
 
-    <label for="name" class="project-label">Please enter description</label>
+    <label for="name" class="project-label">Please enter description *</label>
     {{textarea
       type="text"
       placeholder="Project Description"
       value=description
       class="project-description-input"
+      required="required"
     }}
   </div>
-  
-  {{#link-to 'projects'}}
-    <div class="button--PRIMARY" {{ action 'addProject' }}>Add Project</div>
-  {{/link-to}}
+
+  <button class="button--PRIMARY">Add Project</button>
 
   {{#link-to 'projects'}}
     <div class="button">
       {{!-- <span class="button-icon"><img src="assets/images/skydea-icon-delete.svg"></span> --}}
       Cancel</div>
   {{/link-to}}
-</div>
+</form>
