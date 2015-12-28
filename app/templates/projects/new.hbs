@@ -2,22 +2,23 @@
 
 <form class="project-form" {{action 'addProject' on="submit"}}>
   <div class="project-form--INPUTS">
-    <label for="name" class="project-label">Please enter a project name *</label>
+    <label for="name" class="project-label">Please enter a project name <span class="base-required">*</span></label>
     {{input
       type="text"
-      placeholder="Project Name"
+      placeholder="Ex: Battle Rap App"
       value=name
       class="project-name-input"
       required="required"
     }}
 
-    <label for="name" class="project-label">Please enter description *</label>
+    <label for="name" class="project-label">Please enter description <span class="base-required">*</span></label>
     {{textarea
       type="text"
-      placeholder="Project Description"
+      placeholder="Ex: The Battle Rap App will be a live voting app, where fans of the battle rap culture can vote for which emcee won the battle in specific match ups!"
       value=description
       class="project-description-input"
       required="required"
+      rows="5"
     }}
   </div>
 
@@ -25,7 +26,6 @@
 
   {{#link-to 'projects'}}
     <div class="button">
-      {{!-- <span class="button-icon"><img src="assets/images/skydea-icon-delete.svg"></span> --}}
       Cancel</div>
   {{/link-to}}
 </form>

@@ -56,5 +56,9 @@ input, textarea {
     color: $base-text-color;
     font-family: 'Oxygen', sans-serif;
   }
+
+  &-required {
+    color: $glacier;
+  }
 }
 

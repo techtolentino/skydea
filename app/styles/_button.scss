@@ -19,9 +19,9 @@
   @extend %default-button;
 
   &-icon {
-    img {
-      width: 10px;
-    }
+    width: 1em;
+    float: left;
+    margin: .25em .25em;
   }
   &--PRIMARY {
     @extend %default-button;
