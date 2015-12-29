@@ -5,12 +5,8 @@
     </div>
     <nav>
       <ul class="nav-main">
-        {{#if session.isAuthenticated}}
-          <li>Whattup {{session.currentUser.displayName}}!</li>
-          <li class="nav-button" {{action "signOut"}}> Sign out</li>
-        {{else}}
-        <li class="nav-button"><div {{action "signIn" "twitter"}}>Sign in with Twitter</div></li>
-        {{/if}}
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li class="nav-button" {{action "signOut"}}> Sign in</li>
       </ul>
     </nav>
   </div>
