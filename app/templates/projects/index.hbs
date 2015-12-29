@@ -5,11 +5,10 @@
     <div class="button--LEFT">Add Project</div>
   {{/link-to}}
 {{else}}
-<h2 class="base-subtitle">The Project List!</h2>
+  <h2 class="base-subtitle">The Project List!</h2>
 {{/if}}
 
 {{#each model as |project|}}
-
   <div class="project-item">
     <h3 class="project-title">
       {{project.name}}
@@ -23,6 +22,7 @@
         </button>
       {{/link-to}}
       <button {{action 'deleteProject' project.id}} class="button--DELETE">Delete</button>
+
     {{/if}}
 
   </div>
