@@ -11,6 +11,13 @@
       required="required"
     }}
 
+    <input
+      type="hidden"
+      placeholder="Ex: Battle Rap App"
+      {{bind-attr value=session.currentUser.displayName}}
+      class="project-name-input"
+    >
+
     <label for="name" class="project-label">Please enter description <span class="base-required">*</span></label>
     {{textarea
       type="text"

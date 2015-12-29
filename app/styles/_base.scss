@@ -55,6 +55,13 @@ input, textarea {
     font-size: 1.75em;
     color: $base-dark-color;
     font-family: 'Oxygen', sans-serif;
+
+    &--USER {
+      font-size: 1.75em;
+      color: $base-dark-color;
+      font-family: 'Oxygen', sans-serif;
+      text-transform: capitalize;      
+    }
   }
 
   &-required {

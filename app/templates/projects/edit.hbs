@@ -10,6 +10,13 @@
         class="project-name-input"
       }}
 
+    <input
+      type="hidden"
+      placeholder="Ex: Battle Rap App"
+      {{bind-attr value=session.currentUser.displayName}}
+      class="project-name-input"
+    >      
+
     <label for="name" class="project-label">You can edit the description</label>
       {{textarea
         type="text"

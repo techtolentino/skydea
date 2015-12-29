@@ -4,10 +4,13 @@ export default Ember.Controller.extend({
   actions: {
     addProject: function () {
 
+      var self = this;
+
       // Create new Project
       var newProject = this.store.createRecord('project', {
         name: this.get('name'),
-        description: this.get('description')
+        description: this.get('description'),
+        userName: this.get('userName')
       });
 
       // Save to Firebase
@@ -16,8 +19,11 @@ export default Ember.Controller.extend({
       // Clear form after submit
       this.setProperties({
         name: '',
-        description: ''
+        description: '',
+        userName: ''
       });
+
+      self.transitionTo('projects');
     }
   }
 });
